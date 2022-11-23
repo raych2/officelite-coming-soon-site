@@ -1,0 +1,16 @@
+{
+  "name": "officelite-coming-soon-site",
+  "version": "1.0.0",
+  "description": "![Design preview for the Officelite coming soon site coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
