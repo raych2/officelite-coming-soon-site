@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Officelite coming soon site</title>
-</head>
-<body> 
-  A simple solution to complex tasks is coming soon
-
-  Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
-  collaboration platform built with an intuitive interface to improve productivity.
-
-  Get Started
-
-  Basic
-  Free
-  Up to 5 users for free
-  Basic document collaboration
-  2 gb storage
-  Great security and support
-  Try for Free
-
-  Pro
-  $9.99
-  Per user, billed monthly
-  All essential integrations
-  50 gb storage
-  More control and insights
-  Try for Free
-
-  Ultimate
-  $19.99
-  Per user, billed monthly
-  Robust work management
-  100 gb storage
-  VIP support
-  Try for Free
-
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-  Get Started
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Officelite coming soon site</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <img
+        class="header__logo"
+        src="../src/assets/shared/logo.svg"
+        alt="Officelite logo"
+      />
+    </header>
+    <main class="main">
+      <img
+        class="main__img"
+        src="../src/assets/home/illustration-charts.svg"
+        alt="charts"
+      />
+      <div class="main__intro">
+        <h1 class="main__heading">
+          A simple solution to complex tasks is coming soon
+        </h1>
+        <p class="main__summary">
+          Say goodbye to inefficient juggling of multiple apps, teams, and
+          projects. Officelite is the new collaboration platform built with an
+          intuitive interface to improve productivity.
+        </p>
+        <button class="button button--started">Get Started</button>
+      </div>
+      <div class="main__tiers">
+        <div class="main__tier">
+          <h1 class="main__title">Basic</h1>
+          <h2 class="main__subtitle">Free</h2>
+          <p class="main__detail">Up to 5 users for free</p>
+          <ul class="main__list">
+            <li class="main__list-item">Basic document collaboration</li>
+            <li class="main__list-item">2 GB storage</li>
+            <li class="main__list-item">Great security and support</li>
+          </ul>
+          <button class="button button--outer">Try for Free</button>
+        </div>
+        <div class="main__tier main--pro">
+          <h1 class="main__title">Pro</h1>
+          <h2 class="main__subtitle">$9.99</h2>
+          <p class="main__detail">Per user, billed monthly</p>
+          <ul class="main__list main--white">
+            <li class="main__list-item">All essential integrations</li>
+            <li class="main__list-item">50 GB storage</li>
+            <li class="main__list-item">More control and insights</li>
+          </ul>
+          <button class="button button--inner">Try for Free</button>
+        </div>
+        <div class="main__tier main--outer">
+          <h1 class="main__title">Ultimate</h1>
+          <h2 class="main__subtitle">$19.99</h2>
+          <p class="main__detail">Per user, billed monthly</p>
+          <ul class="main__list">
+            <li class="main__list-item">Robust work management</li>
+            <li class="main__list-item">100 GB storage</li>
+            <li class="main__list-item">VIP support</li>
+          </ul>
+          <button class="button button--outer">Try for Free</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__date">
+        <span class="footer--white">Coming</span> 4 Nov 2020
+      </p>
+      <div class="footer__timer">
+        <div class="footer__time">
+          <p class="footer--white footer--number">47</p>
+          <p class="footer--unit">days</p>
+        </div>
+        <div class="footer__time">
+          <p class="footer--white footer--number">7</p>
+          <p class="footer--unit">hours</p>
+        </div>
+        <div class="footer__time">
+          <p class="footer--white footer--number">56</p>
+          <p class="footer--unit">min</p>
+        </div>
+        <div class="footer__time">
+          <p class="footer--white footer--number">14</p>
+          <p class="footer--unit">sec</p>
+        </div>
+      </div>
+      <button class="button button--started button--footer">Get Started</button>
+    </footer>
+  </body>
 </html>
