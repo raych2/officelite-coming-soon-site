@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Colors */
+  --offwhite-bg: hsla(0, 0%, 98%, 1);
+  --dark-bg: hsl(228, 22%, 26%);
+  --blue-bg: hsl(228, 100%, 66%);
+  --lighter-blue-bg: rgba(81, 117, 255, 0.15);
+  --white-bg: hsl(0, 0%, 100%);
+  --dark-blue: hsla(227, 22%, 26%, 1);
+  --dark: hsl(229, 22%, 19%);
+  --gray: hsl(227, 13%, 52%);
+  --blue-hover: hsl(228, 100%, 75%);
+  --red-error: hsl(0, 83%, 65%);
+  /* Typography */
+  --fs: 1rem;
+  --ff: "Kumbh Sans", sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 700;
+}
+.body {
+  background-image: url(../src/assets/home/bg-pattern-header.svg);
+  background-position-x: center;
+  background-position-y: -10.625em, top;
+  background-size: 125%;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: var(--offwhite-bg);
+  font-family: var(--ff);
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.header__logo {
+  margin: 3.103125em 0 2.5em 0;
+}
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.main__img {
+  margin: 2.5em 0 1em 0;
+  width: 171px;
+  height: 192px;
+}
+.main__intro {
+  margin-top: 1em;
+  width: 20.4375em;
+  height: 23.625em;
+}
+.main__heading {
+  margin-bottom: 0.75em;
+  font-size: 2.5rem;
+  color: var(--dark);
+}
+.main__summary {
+  margin: 0.75em 0;
+  color: var(--gray);
+  line-height: 26px;
+}
+.button {
+  width: 10.6875em;
+  height: 3.5em;
+  margin-top: 1em;
+  border-radius: 28px;
+  font-family: var(--ff);
+  font-weight: var(--fw-bold);
+  font-size: 1em;
+  color: var(--blue-bg);
+  border-style: none;
+}
+.button--started {
+  margin: 0.75em 0 3.125em 0;
+  color: var(--white-bg);
+  background: var(--blue-bg);
+  border-color: var(--blue-bg);
+  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+}
+.button--outer {
+  margin: 1em 0 2.5em 0;
+  background-color: var(--lighter-blue-bg);
+}
+.main__tiers {
+  margin-top: 5.125em;
+  z-index: 99;
+}
+.main__tier {
+  width: 20.4375em;
+  height: 31.75em;
+  margin: 32px 0 16px 0;
+  background-color: var(--white-bg);
+  border-color: var(--white-bg);
+  border-radius: 13px;
+  color: var(--dark-blue);
+}
+.main__title {
+  margin: 16px 0 40px 0;
+  padding-top: 40px;
+  font-size: 1.25rem;
+}
+.main__subtitle {
+  font-size: 3.5rem;
+}
+.main__detail {
+  margin: 1em 0 1.75em 0;
+  padding-bottom: 1.5em;
+  font-weight: var(--fw-reg);
+  font-size: 1rem;
+}
+.main__list {
+  margin: 2em 0 1em 0;
+  list-style-type: none;
+  font-weight: var(--fw-reg);
+  color: hsla(227, 14%, 52%, 1);
+}
+.main--white {
+  color: var(--white-bg);
+}
+.main__list-item {
+  padding: 8px 0;
+}
+.main--pro {
+  color: var(--white-bg);
+  background-color: var(--blue-bg);
+  background-image: url(../src/assets/home/bg-pattern-pricing.svg);
+  background-position-x: center;
+  background-position-y: -23.75em, top;
+  background-size: 275%;
+  background-repeat: no-repeat;
+}
+.footer {
+  z-index: -1;
+  margin-top: -800px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 55.875em 0 6.25em 0;
+  width: 100%;
+  max-height: 1248px;
+  background-color: hsla(228, 22%, 19%, 1);
+  background-image: url(../src/assets/home/bg-pattern-footer.svg);
+  background-position-x: center;
+  background-position-y: 8.75em, top;
+  background-size: 325%;
+  background-repeat: no-repeat;
+}
+.footer__date {
+  margin-bottom: 1.125em;
+  font-style: normal;
+  font-weight: var(--fw-bold);
+  line-height: 48px;
+  letter-spacing: 5px;
+  color: var(--blue-bg);
+  text-transform: uppercase;
+}
+.footer--white {
+  color: var(--white-bg);
+}
+.footer__timer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 328px;
+  margin: 0 auto;
+  padding: 0.125em 0 1.25em 0;
+}
+.footer__time {
+  width: 72px;
+  height: 92px;
+  background-color: hsla(227, 22%, 26%, 1);
+  border-radius: 4px;
+}
+.footer--number {
+  margin-top: 8px;
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+  line-height: 48px;
+}
+.footer--unit {
+  font-size: 12px;
+  line-height: 28px;
+  color: var(--offwhite-bg);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.button--footer {
+  margin-top: 1.25em;
+}
