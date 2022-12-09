@@ -1,36 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../src/assets/favicon-32x32.png"
+    />
+    <script src="./script.js" defer></script>
     <title>Frontend Mentor | Officelite coming soon site</title>
-</head>
-<body>
-  Work smarter. Save time.
+  </head>
+  <body class="body su-body">
+    <header class="header">
+      <img
+        class="header__logo"
+        src="../src/assets/shared/logo.svg"
+        alt="Officelite logo"
+      />
+    </header>
+    <main class="main">
+      <div class="main__intro">
+        <h1 class="main__heading su__heading">Work smarter. Save time.</h1>
+        <p class="main__summary su__summary">
+          Easily manage your projects. Get on the list and receive in-app perks
+          available only to early subscribers. We are moving into final
+          development and getting ready for official launch soon.
+        </p>
+      </div>
+      <div class="countdown">
+        <p class="footer__date countdown__date">
+          <span class="countdown--dark">Coming</span> 4 Nov 2020
+        </p>
+        <div class="footer__timer">
+          <div class="footer__time countdown__time">
+            <p class="footer--number countdown--blue">47</p>
+            <p class="footer--unit countdown--unit">days</p>
+          </div>
+          <div class="footer__time countdown__time">
+            <p class="footer--number countdown--blue">7</p>
+            <p class="footer--unit countdown--unit">hours</p>
+          </div>
+          <div class="footer__time countdown__time">
+            <p class="footer--number countdown--blue">56</p>
+            <p class="footer--unit countdown--unit">min</p>
+          </div>
+          <div class="footer__time countdown__time">
+            <p class="footer--number countdown--blue">14</p>
+            <p class="footer--unit countdown--unit">sec</p>
+          </div>
+        </div>
+      </div>
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
-
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
-</body>
+      <form class="form" action="/url">
+        <div class="form__section">
+          <label
+            class="form__label form--visually-hidden"
+            for="name"
+            id="name-label"
+            ><strong>Name</strong></label
+          >
+          <input
+            class="form__input"
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="form__section">
+          <label
+            class="form__label form--visually-hidden"
+            for="email"
+            id="email-label"
+            ><strong>Email Address</strong></label
+          >
+          <input
+            class="form__input"
+            type="email"
+            id="email"
+            name="user_email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div class="form__section">
+          <label class="form__label form--visually-hidden" for="dropdown"
+            ><strong>Basic Pack Free</strong></label
+          >
+          <select name="options" class="form__input form__select" id="dropdown">
+            <option class="form__option" value="">
+              Basic Pack <span class="form--price">Free</span>
+            </option>
+            <option class="form__option" value="pro">
+              Pro Pack <span class="form--price">$9.99</span>
+            </option>
+            <option class="form__option" value="ultimate">
+              Ultimate Pack <span class="form--price">$19.99</span>
+            </option>
+          </select>
+        </div>
+        <div class="form__section">
+          <label
+            class="form__label form--visually-hidden"
+            for="number"
+            id="number-label"
+            ><strong>Phone Number</strong></label
+          >
+          <input
+            class="form__input"
+            type="text"
+            id="number"
+            name="user_phone"
+            placeholder="Phone Number"
+          />
+        </div>
+        <div class="form__section">
+          <label
+            class="form__label form--visually-hidden"
+            for="name"
+            id="name-label"
+            ><strong>Company</strong></label
+          >
+          <input
+            class="form__input"
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Company"
+            required
+          />
+        </div>
+        <button class="button button--started button--submit">
+          Get on the list
+        </button>
+      </form>
+    </main>
+    <footer class="footer su-footer"></footer>
+  </body>
 </html>
