@@ -173,6 +173,7 @@
   width: 328px;
   margin: 0 auto;
   padding: 0.125em 0 1.25em 0;
+  font-weight: var(--fw-bold);
 }
 .footer__time {
   width: 72px;
@@ -182,7 +183,6 @@
 }
 .footer--number {
   margin-top: 8px;
-  font-weight: var(--fw-bold);
   font-size: 2rem;
   line-height: 48px;
 }
@@ -195,4 +195,104 @@
 }
 .button--footer {
   margin-top: 1.25em;
+}
+/* Sign Up Page */
+.su-body {
+  max-height: 1236px;
+}
+.su__heading {
+  margin: 0.475em 0 0.45em 0;
+}
+.su__summary {
+  margin-top: 0.125em;
+}
+.countdown {
+  margin: -4em 0 2em 0;
+}
+.countdown__date {
+  margin: 1em 0;
+}
+.countdown--dark {
+  color: var(--dark-blue);
+}
+.countdown__time {
+  background-color: var(--lighter-blue-bg);
+}
+.countdown--blue {
+  color: var(--blue-bg);
+}
+.countdown--unit {
+  color: var(--dark-blue);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.form {
+  /* w: 327px, h: 465 */
+  margin-top: 2em;
+  width: 20.4375em;
+  height: 29.0625em;
+  padding: 1.5em;
+  background-color: hsla(0, 0%, 100%, 1);
+  border-radius: 13px;
+}
+.form__label {
+  display: block;
+}
+.form--visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.form__input {
+  margin: 0.5em 0 0.5em 0;
+  padding: 0em 0 1em 1em;
+  width: 17.4375em;
+  height: 2.8125em;
+  border-style: hidden hidden solid hidden;
+  border-width: 1px;
+  font-weight: var(--fw-reg);
+  font-size: 1em;
+}
+.form__input::placeholder {
+  color: hsla(227, 14%, 52%, 1);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.form__select {
+  margin: 0.5rem 0;
+  width: 17.4375rem;
+  height: 2.8125rem;
+  padding: 0 0 1rem 1rem;
+  background-color: hsla(0, 0%, 100%, 1);
+  font-weight: var(--fw-bold);
+}
+.form__option {
+  background-color: hsla(0, 0%, 100%, 1);
+}
+.form--price {
+  color: hsla(227, 14%, 52%, 1);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.button--submit {
+  margin: 3em 0 1em 0;
+  width: 17.4375em;
+  box-shadow: none;
+}
+.su-footer {
+  max-height: 320px;
+  margin-top: -232.5px;
+  padding-top: 15em;
+  width: 100%;
+  background-color: hsla(228, 22%, 19%, 1);
+  background-image: url(../src/assets/home/bg-pattern-footer.svg);
+  background-position-x: center;
+  background-position-y: -30.5em, center;
+  background-size: 330%;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
 }
