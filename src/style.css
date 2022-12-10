@@ -12,11 +12,12 @@
   --dark-bg: hsl(228, 22%, 26%);
   --blue-bg: hsl(228, 100%, 66%);
   --lighter-blue-bg: rgba(81, 117, 255, 0.15);
-  --white-bg: hsl(0, 0%, 100%);
+  --white-bg: hsla(0, 0%, 100%, 1);
   --dark-blue: hsla(227, 22%, 26%, 1);
   --dark: hsl(229, 22%, 19%);
   --gray: hsl(227, 13%, 52%);
-  --blue-hover: hsl(228, 100%, 75%);
+  --blue-hover: hsla(228, 100%, 75%, 1);
+  --lighter-blue-hover: rgba(81, 117, 255, 0.25);
   --red-error: hsl(0, 83%, 65%);
   /* Typography */
   --fs: 1rem;
@@ -86,9 +87,21 @@
   border-color: var(--blue-bg);
   box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
 }
+.button--started:hover {
+  background: var(--blue-hover);
+}
 .button--outer {
   margin: 1em 0 2.5em 0;
   background-color: var(--lighter-blue-bg);
+}
+.button--outer:hover {
+  background-color: var(--lighter-blue-hover);
+}
+.button--inner {
+  background: var(--white-bg);
+}
+.button--inner:hover {
+  color: var(--blue-hover);
 }
 .main__tiers {
   margin-top: 5.125em;
