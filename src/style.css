@@ -241,7 +241,7 @@
 }
 .form {
   /* w: 327px, h: 465 */
-  margin-top: 2em;
+  margin-top: 1em;
   width: 20.4375em;
   height: 29.0625em;
   padding: 1.5em;
@@ -299,13 +299,12 @@
 .su-footer {
   max-height: 320px;
   margin-top: -232.5px;
-  padding-top: 15em;
+  padding-top: 14em;
   width: 100%;
   background-color: hsla(228, 22%, 19%, 1);
-  background-image: url(../src/assets/home/bg-pattern-footer.svg);
+  background-image: url(../src/assets/sign-up/bg-pattern-side.svg);
   background-position-x: center;
-  background-position-y: -30.5em, center;
-  background-size: 330%;
+  background-position-y: -26em, center;
+  background-size: 325%;
   background-repeat: no-repeat;
-  transform: rotate(180deg);
 }
