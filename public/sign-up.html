@@ -91,17 +91,34 @@
           <label class="form__label form--visually-hidden" for="dropdown"
             ><strong>Basic Pack Free</strong></label
           >
-          <select name="options" class="form__input form__select" id="dropdown">
-            <option class="form__option" value="">
-              Basic Pack <span class="form--price">Free</span>
-            </option>
-            <option class="form__option" value="pro">
-              Pro Pack <span class="form--price">$9.99</span>
-            </option>
-            <option class="form__option" value="ultimate">
-              Ultimate Pack <span class="form--price">$19.99</span>
-            </option>
-          </select>
+          <div class="form__select-wrapper">
+            <div class="form__input form__select form__js-select">
+              <div class="form__select-trigger">
+                <div class="form__select-trigger-text">
+                  <p form--trigger-text>Basic Pack</p>
+                  <span class="form--price form--trigger-price">Free</span>
+                </div>
+                <img
+                  class="form__select-arrow"
+                  src="/src/assets/sign-up/icon-arrow-down.svg"
+                />
+              </div>
+              <div class="form__custom-options">
+                <div
+                  class="form__option form__option--selected"
+                  data-value="basic"
+                >
+                  Basic Pack <span class="form--price">Free</span>
+                </div>
+                <div class="form__option" data-value="pro">
+                  Pro Pack <span class="form--price">$9.99</span>
+                </div>
+                <div class="form__option" data-value="ultimate">
+                  Ultimate Pack <span class="form--price">$19.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="form__section">
           <label

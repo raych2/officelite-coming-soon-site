@@ -236,7 +236,6 @@
 }
 .countdown--unit {
   color: var(--dark-blue);
-  mix-blend-mode: normal;
   opacity: 0.5;
 }
 .form {
@@ -267,29 +266,91 @@
   height: 2.8125em;
   border-style: hidden hidden solid hidden;
   border-width: 1px;
+  border-color: hsla(227, 14%, 52%, 0.5);
   font-weight: var(--fw-reg);
   font-size: 1em;
 }
 .form__input::placeholder {
-  color: hsla(227, 14%, 52%, 1);
-  mix-blend-mode: normal;
-  opacity: 0.5;
+  color: hsla(227, 14%, 52%, 0.5);
+}
+.form__select-wrapper {
+  position: relative;
+  user-select: none;
+  width: 100%;
+  color: var(--dark-blue);
+  text-align: left;
 }
 .form__select {
-  margin: 0.5rem 0;
-  width: 17.4375rem;
-  height: 2.8125rem;
-  padding: 0 0 1rem 1rem;
+  position: relative;
+  margin: 0.5em 0;
+  width: 17.4375em;
+  height: 2.8125em;
+  padding: 0 0 1em 1em;
   background-color: hsla(0, 0%, 100%, 1);
   font-weight: var(--fw-bold);
 }
-.form__option {
-  background-color: hsla(0, 0%, 100%, 1);
+.form__select-trigger {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.form__select-trigger-text {
+  display: flex;
 }
 .form--price {
-  color: hsla(227, 14%, 52%, 1);
-  mix-blend-mode: normal;
-  opacity: 0.5;
+  margin-left: 0.25em;
+  color: hsla(227, 14%, 52%, 0.5);
+  pointer-events: none;
+}
+.form--trigger-price {
+  margin-left: 0.5625em;
+}
+.form__select-arrow {
+  transform: scale(30%);
+}
+.form__custom-options {
+  position: absolute;
+  top: calc(2.8em + 0.5em);
+  left: 0;
+  padding: 0.8em 0;
+  display: none;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 1);
+  border: 1px solid hsla(227, 22%, 26%, 0.15);
+  border-radius: 0.5em;
+  box-shadow: 0 0 4px #e9e1f8;
+  z-index: 1;
+}
+.form__select--active .form__custom-options {
+  display: block;
+}
+.form__select-arrow--active {
+  transform: rotate(180deg) scale(30%);
+}
+.form__option--selected {
+  background-image: url(../src/assets/sign-up/icon-check.svg);
+  background-position-x: calc(17.4375em - 3em);
+  background-position-y: 1em, top;
+  background-repeat: no-repeat;
+}
+.form__option {
+  position: relative;
+  padding: 0.8em 2em;
+}
+.form__option:hover {
+  background-color: hsla(228, 100%, 66%, 0.25);
+}
+.form__option:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2em;
+  width: calc(100% - 4em);
+  border-bottom: 1px solid hsla(227, 14%, 52%, 0.25);
 }
 .button--submit {
   margin: 3em 0 1em 0;

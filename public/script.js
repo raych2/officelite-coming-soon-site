@@ -30,3 +30,37 @@ const countdown = setInterval(() => {
         clearInterval(countdown);
     }
 }, 1000);
+// Custom Select
+const selectWrapper = document.querySelector(".form__select-wrapper");
+const selectCustom = document.querySelector(".form__js-select");
+const selectCustomValue = selectCustom.children[0];
+const selectCustomOptions = selectCustom.children[1];
+const selectedValue = document.querySelector(".form__select-trigger-text");
+const defaultLabel = selectCustomValue.getAttribute("data-value");
+const arrow = document.querySelector(".form__select-arrow");
+Array.from(selectCustomOptions.children).forEach(function (option) {
+    option.addEventListener("click", (event) => {
+        const prevSelected = document.querySelector(".form__option.form__option--selected");
+        const target = event.target;
+        prevSelected.classList.remove("form__option--selected");
+        target.classList.add("form__option--selected");
+        const targetType = target.childNodes[0].textContent;
+        const targetPrice = target.childNodes[1].textContent;
+        selectedValue.childNodes[1].textContent = targetType;
+        selectedValue.childNodes[3].textContent = targetPrice;
+        selectCustom.classList.remove("form__select--active");
+        arrow.classList.remove("form__select-arrow--active");
+    });
+});
+selectCustomValue.addEventListener("click", (event) => {
+    selectCustom.classList.toggle("form__select--active");
+    arrow.classList.toggle("form__select-arrow--active");
+});
+document.addEventListener("click", (event) => {
+    const target = event.target;
+    const clickedOutside = !selectCustom.contains(target);
+    if (clickedOutside) {
+        selectCustom.classList.remove("form__select--active");
+        arrow.classList.remove("form__select-arrow--active");
+    }
+});
