@@ -53,8 +53,7 @@
           </div>
         </div>
       </div>
-
-      <form class="form" action="/url">
+      <form class="form" action="#">
         <div class="form__section">
           <label
             class="form__label form--visually-hidden"
@@ -68,6 +67,8 @@
             id="name"
             name="user_name"
             placeholder="Name"
+            minlength="3"
+            maxlength="100"
             required
           />
         </div>
@@ -129,25 +130,27 @@
           >
           <input
             class="form__input"
-            type="text"
+            type="tel"
             id="number"
             name="user_phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             placeholder="Phone Number"
           />
         </div>
         <div class="form__section">
           <label
             class="form__label form--visually-hidden"
-            for="name"
-            id="name-label"
+            for="company"
+            id="company-label"
             ><strong>Company</strong></label
           >
           <input
             class="form__input"
             type="text"
-            id="name"
-            name="user_name"
+            id="company"
+            name="user_company"
             placeholder="Company"
+            maxlength="100"
           />
         </div>
         <button class="button button--started button--submit">

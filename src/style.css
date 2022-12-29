@@ -273,6 +273,16 @@
 .form__input::placeholder {
   color: hsla(227, 14%, 52%, 0.5);
 }
+.form__input:not(:placeholder-shown):invalid {
+  color: var(--red-error);
+  border-style: hidden hidden solid hidden;
+  border-width: 1px;
+  border-color: var(--red-error);
+  background-image: url(../src/assets/sign-up/icon-cross.svg);
+  background-position-x: calc(17.4375em - 2em);
+  background-position-y: 0.25em, top;
+  background-repeat: no-repeat;
+}
 .form__select-wrapper {
   position: relative;
   user-select: none;
