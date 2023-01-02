@@ -209,6 +209,108 @@
 .button--footer {
   margin-top: 1.25em;
 }
+/* Home Page Media Queries */
+@media (min-width: 481px) {
+  .body {
+    background-position-x: 23.5em;
+    background-position-y: -11em, top;
+    background-size: 95%;
+  }
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+  }
+  .header__logo {
+    margin: 4.5em 0 1em 0;
+  }
+  .main {
+    margin-top: 6.5em;
+    flex-flow: row-reverse wrap;
+    justify-content: space-evenly;
+  }
+  .main__img {
+    margin: 0 0 -6em 0;
+    width: 17.5625em;
+    height: 19.625em;
+    transform: scale(120%);
+  }
+  .main__intro {
+    width: 21.5625em;
+    height: 22em;
+    text-align: left;
+  }
+  .main__summary {
+    margin: 1.5em 0;
+    width: 99%;
+  }
+  .main__tiers {
+    margin-top: 8.75em;
+    height: 62.25em;
+  }
+  .main__tier {
+    padding-left: 3em;
+    width: 43.0625em;
+    height: 19.75em;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+  }
+  .main__title {
+    margin-bottom: 0.5em;
+    order: 1;
+  }
+  .main__subtitle {
+    order: 2;
+  }
+  .main__detail {
+    margin-top: 0.5em;
+    order: 3;
+  }
+  .main--pro {
+    background-position-x: -20.25em, left;
+    background-position-y: -18.5em, top;
+    background-size: 130%;
+  }
+  .main__list {
+    margin: 5.75em 0 6.75em 6.25em;
+    order: 5;
+  }
+  .button--outer {
+    order: 4;
+    margin-top: -2em;
+  }
+  .button--inner {
+    order: 4;
+    margin: -2em 0 2.5em 0;
+  }
+  .footer {
+    max-height: 986px;
+    margin-top: -450px;
+    padding: 40em 0 26.25em 0;
+    background-position-x: center;
+    background-position-y: -0.5em, top;
+    background-size: 210%;
+  }
+  .footer__timer {
+    width: 28em;
+  }
+  .footer__time {
+    width: 6.25em;
+    height: 8em;
+    border-radius: 13px;
+  }
+  .footer--number {
+    margin: 0.52625em 0 0.165em 0;
+    font-size: 3.5rem;
+  }
+  .footer--unit {
+    font-size: 1rem;
+  }
+  .button--footer {
+    margin: 3em 0 6.25em 0;
+  }
+}
 /* Sign Up Page */
 .su-body {
   max-height: 1236px;
@@ -379,3 +481,4 @@
   background-size: 325%;
   background-repeat: no-repeat;
 }
+/* Sign Up Page Media Queries */
