@@ -210,7 +210,7 @@
   margin-top: 1.25em;
 }
 /* Home Page Media Queries */
-@media (min-width: 481px) {
+@media (min-width: 768px) {
   .body {
     background-position-x: 23.5em;
     background-position-y: -11em, top;
@@ -309,6 +309,112 @@
   }
   .button--footer {
     margin: 3em 0 6.25em 0;
+  }
+}
+@media (min-width: 992px) {
+  .body {
+    background-position-x: 41em;
+    background-position-y: -28.875em, top;
+    background-size: 80%;
+  }
+  .header__logo {
+    margin: 5.0625em 0 1em 0em;
+  }
+  .main {
+    margin-top: 6.5em;
+    flex-flow: row-reverse wrap;
+    justify-content: space-evenly;
+  }
+  .main__img {
+    margin: 0 0 -6em 0;
+    width: 29.6875em;
+    height: 33.1875em;
+  }
+  .main__intro {
+    width: 33.75em;
+    height: 24.25em;
+  }
+  .main__heading {
+    font-size: 3.5rem;
+  }
+  .main__summary {
+    margin: 1.5em 0;
+    font-size: 1.125rem;
+    width: 99%;
+  }
+  .main__tiers {
+    margin: 13em 0 20em 0;
+    width: 69.375em;
+    height: 31.75em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .main__tier {
+    padding-left: 0;
+    width: 21.875em;
+    height: 31.75em;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .main__title {
+    margin: 1.25em 0;
+    padding-top: 0;
+    order: 1;
+  }
+  .main__subtitle {
+    order: 2;
+  }
+  .main__detail {
+    margin: 1em 0 1.75em 0;
+    padding-bottom: 0;
+    order: 3;
+  }
+  .main__list {
+    margin: 1.75em 0 0 0;
+    order: 4;
+  }
+  .button--outer,
+  .button--inner {
+    margin: 2em auto 2.5em auto;
+    order: 5;
+  }
+  .main--pro {
+    background-position-x: center;
+    background-position-y: -23.25em, top;
+    background-size: 250%;
+  }
+  .footer {
+    margin-top: -550px;
+    padding: 5em 0 30em 0;
+    max-height: 603px;
+    background-position-x: -45em;
+    background-position-y: -40em, top;
+    background-size: 145%;
+  }
+  .footer__date-content {
+    margin: 0 auto;
+    padding: 16em 0 0 0;
+    width: 69.375em;
+    height: 11em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer__date-timer {
+    flex-flow: column nowrap;
+  }
+  .footer__date {
+    text-align: left;
+  }
+  .footer__timer {
+    margin: -15px 0 20px 0;
+  }
+  .button--footer {
+    margin-top: 1em;
   }
 }
 /* Sign Up Page */
