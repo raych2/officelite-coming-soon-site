@@ -318,8 +318,11 @@
     background-position-y: -28.875em, top;
     background-size: 80%;
   }
+  .header {
+    margin-left: -2em;
+  }
   .header__logo {
-    margin: 5.0625em 0 1em 0em;
+    margin: 5.0625em 0 1em 0;
   }
   .main {
     margin-top: 6.5em;
@@ -448,7 +451,6 @@
   opacity: 0.5;
 }
 .form {
-  /* w: 327px, h: 465 */
   margin-top: 1em;
   width: 20.4375em;
   height: 29.0625em;
