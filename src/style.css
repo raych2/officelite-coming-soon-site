@@ -328,6 +328,7 @@
     margin-top: 6.5em;
     flex-flow: row-reverse wrap;
     justify-content: space-evenly;
+    height: 1271px;
   }
   .main__img {
     margin: 0 0 -6em 0;
@@ -347,7 +348,7 @@
     width: 99%;
   }
   .main__tiers {
-    margin: 13em 0 20em 0;
+    margin: 10em 0 20em 0;
     width: 69.375em;
     height: 31.75em;
     display: flex;
@@ -391,7 +392,7 @@
     background-size: 250%;
   }
   .footer {
-    margin-top: -550px;
+    margin-top: -400px;
     padding: 5em 0 30em 0;
     max-height: 603px;
     background-position-x: -45em;
